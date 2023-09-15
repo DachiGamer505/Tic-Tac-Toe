@@ -122,6 +122,9 @@ body{
     background-color: rgb(155, 155, 155);
     border-style: solid;
 }
+.restart-button:hover{
+    backgound-color: rgb(160, 160, 160); 
+}
 .black-screen{
     position: absolute;
     top:0;
