@@ -127,4 +127,6 @@ function restart (){
     XWin = false;
     OWin = false;
     draw = false;
+    OTurn = false;
+    XTurn = true;
 }
