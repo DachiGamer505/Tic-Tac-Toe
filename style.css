@@ -19,11 +19,11 @@
 #o1, #o2, #o3, #o4, #o5, #o6, #o7, #o8, #o9{
     background-color: black;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 65%;
+    height: 65%;
     position: absolute;
-    top: 16%;
-    left: 16%;
+    top: 18%;
+    left: 18%;
     opacity: 0%;
     transition: opacity 250ms;
 }
@@ -71,6 +71,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    min-height: 200px;
 }
 .endgame{
     position: absolute;
@@ -122,9 +123,6 @@ body{
     background-color: rgb(155, 155, 155);
     border-style: solid;
 }
-.restart-button:hover{
-    backgound-color: rgb(160, 160, 160); 
-}
 .black-screen{
     position: absolute;
     top:0;
@@ -167,10 +165,51 @@ body{
     height: 100vh;
     object-fit: cover;
     filter: brightness(90%) blur(2px);
+    min-height: 200px;
 }
 .header{
     font-size: 80px;
     z-index: 2;
     margin-top: -75px;
     margin-bottom: 15px;
+}
+@media screen and (min-width: 1024px){
+    .grid{
+        grid-template-columns: 150px 150px 150px;
+        grid-template-rows: 150px 150px 150px;
+    }
+}
+@media screen and (max-width: 768px){
+    .grid{
+        grid-template-columns: 70px 70px 70px;
+        grid-template-rows: 70px 70px 70px;
+    }
+    .header{
+        font-size: 40px;
+    }
+}
+@media(max-height:560px){
+    .grid{
+        grid-template-columns: 70px 70px 70px;
+        grid-template-rows: 70px 70px 70px;
+    }
+}  
+@media(max-height: 590px){
+    .header{
+        font-size: 40px;
+    }
+} 
+@media(max-height: 330px){
+    .header{
+        font-size: 20px;
+    }
+    .grid{
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px;
+    }
+}
+@media(max-height: 260px){
+    .header{
+        margin-top: -20px;
+    }
 }
