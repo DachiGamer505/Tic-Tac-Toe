@@ -1,0 +1,173 @@
+.grid{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    justify-content: center;
+    align-content: center;
+    pointer-events: auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.267);
+    z-index: 1;
+}
+#c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8, #c9{
+    background-color: rgb(255, 222, 131);
+    border-radius: 0;
+    border-color: rgb(255, 180, 69);
+    border-style: solid;
+    border-width: 1px;
+    position: relative;
+}
+#o1, #o2, #o3, #o4, #o5, #o6, #o7, #o8, #o9{
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 16%;
+    left: 16%;
+    opacity: 0%;
+    transition: opacity 250ms;
+}
+
+.smallo{
+    width: 60%;
+    height: 60%;
+    background-color: rgb(255, 222, 131);
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    border-radius: 50%;
+}
+.x1{
+    width: 15%;
+    height: 62%;
+    background-color: black;
+    position: absolute;
+    left: 42%;
+    top: 19%;
+    rotate: 45deg;
+}
+.x2{
+    width: 15%;
+    height: 62%;
+    background-color: black;
+    position: absolute;
+    left: 42%;
+    top: 19%;
+    rotate: -45deg;
+}
+#x1, #x2, #x3, #x4, #x5, #x6, #x7, #x8, #x9{
+    opacity: 0%;
+    transition: opacity 250ms;
+    z-index: 3;
+}
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Patrick Hand';
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.endgame{
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.endgame-container{
+    background-color: transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+}
+.result{
+    color: white;
+    font-size: 50px;
+    margin: 0px 0px 0px;
+}
+.score{
+    position: absolute;
+    color: white;
+    opacity: 100%;
+    bottom: 20px;
+    font-size: 25px;
+    z-index: 10;
+}
+.restart-button{
+    margin-top: 0px;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: 'Patrick Hand';
+    cursor: pointer;
+}
+.restart-button:active{
+    background-color: rgb(155, 155, 155);
+    border-style: solid;
+}
+.black-screen{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 75%;
+    font-family: 'Patrick Hand', cursive;
+}
+.endgame-screen{
+    opacity: 0%;
+    pointer-events: none;
+    transition: opacity 300ms;
+    z-index: 20;
+}
+.score-container{
+    display: flex;
+    justify-content: center;
+}
+#c1, #c2, #c3{
+    border-top: none;
+}
+#c1, #c4, #c7{
+    border-left: none;
+}
+#c7, #c8, #c9{
+    border-bottom: none;
+}
+#c3, #c6, #c9{
+    border-right: none;
+}
+.span{
+    margin: 0 40px 0 40px;
+
+}
+.wood-texture{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(90%) blur(2px);
+}
+.header{
+    font-size: 80px;
+    z-index: 2;
+    margin-top: -75px;
+    margin-bottom: 15px;
+}
