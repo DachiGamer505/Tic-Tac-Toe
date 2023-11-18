@@ -15,6 +15,7 @@
     border-style: solid;
     border-width: 1px;
     position: relative;
+    cursor:pointer;
 }
 #o1, #o2, #o3, #o4, #o5, #o6, #o7, #o8, #o9{
     background-color: black;
@@ -173,6 +174,65 @@ body{
     margin-top: -75px;
     margin-bottom: 15px;
 }
+.comp-play-button{
+    z-index: 3;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Patrick Hand';
+    cursor: pointer;
+
+}
+.comp-play-container{
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+    top: 620px;
+}
+.choose{
+    font-size: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.comp-play-cancel{
+    display: block;
+    margin: 0;
+    font-size: 25px;
+    margin-top: 5px;
+}
+@media (max-height: 750px){
+    .grid{
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+    }
+    .comp-play-container{
+        top: 530px;
+    }
+}
+@media(max-height: 656px){
+    .comp-play-container{
+        top: 490px;
+    }
+}
+@media(max-height: 616px){
+    .comp-play-container{
+        top: 470px;
+    }
+    .comp-play-button{
+        font-size: 30px;
+    }
+    .choose{
+        font-size: 30px;
+    }
+}
+@media(max-height: 590px){
+    .comp-play-container{
+        top: 410px
+    }
+}
 @media screen and (min-width: 1024px){
     .grid{
         grid-template-columns: 150px 150px 150px;
@@ -187,18 +247,59 @@ body{
     .header{
         font-size: 40px;
     }
+    .comp-play-button{
+        font-size: 20px;
+        margin: 0;
+    }
+    .comp-play-container{
+        top: 500px;
+    }
+    .choose{
+        font-size: 20px;
+    }
 }
 @media(max-height:560px){
     .grid{
         grid-template-columns: 70px 70px 70px;
         grid-template-rows: 70px 70px 70px;
     }
+    .header{
+        font-size: 40px;
+    }
+    .comp-play-button{
+        font-size: 20px;
+        margin: 0;
+    }
+    .comp-play-container{
+        top: 430px;
+        bottom: 50px;
+    }
+    .choose{
+        font-size: 20px;
+    }
 }  
+@media(max-height: 520px){
+
+}
 @media(max-height: 590px){
     .header{
         font-size: 40px;
     }
+    .grid{
+        grid-template-columns: 90px 90px 90px;
+        grid-template-rows: 90px 90px 90px;
+    }
 } 
+@media(max-height: 536px){
+    .comp-play-container{
+        top: 380px;
+    }
+}
+@media(max-height: 416px){
+    .comp-play-container{
+        top: 320px;
+    }
+}
 @media(max-height: 330px){
     .header{
         font-size: 20px;
@@ -207,9 +308,109 @@ body{
         grid-template-columns: 50px 50px 50px;
         grid-template-rows: 50px 50px 50px;
     }
+    .comp-play-container{
+        bottom: 300px;
+        top: 0;
+    }
+}
+@media(max-height:360px){
+    .comp-play-container{
+        top: 290px;
+    }
+    .comp-play-button{
+        font-size: 15px;
+    }
+    .comp-play-cancel{
+        font-size: 15px;
+    }
+    .choose{
+        font-size: 20px;
+    }
 }
 @media(max-height: 260px){
     .header{
         margin-top: -20px;
+    }
+}
+@media(max-height: 575px){
+    .comp-play-container{
+        top: 410px
+    }
+    .comp-play-button{
+        font-size: 25px;
+    }
+    .choose{
+        font-size: 25px;
+    }
+}
+@media(max-height: 475px){
+    .comp-play-container{
+        top: 240px;
+        bottom: 0;
+    }
+    .header{
+        font-size: 0;
+    }
+    .grid{
+        margin-top: -60px;
+    }
+}
+@media(max-height: 420px){
+    .comp-play-container{
+        top: 240px;
+    }
+}
+@media(max-height: 390px){
+    .comp-play-container{
+        top: 240px;
+    }
+}
+@media(max-height: 375px){
+    .comp-play-button{
+        font-size: 15px;
+    }
+    .comp-play-container{
+        top: 215px;
+    }
+    .choose{
+        font-size: 15px;
+    }
+}
+@media(max-height: 348px){
+    .comp-play-container{
+        top: 220px;
+    }
+}
+@media(max-height:337px){
+    .comp-play-container{
+        top: 200px;
+    }
+    .comp-play-button{
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+    .choose{
+        font-size: 10px;
+    }
+}
+@media(max-height: 301px){
+    .comp-play-container{
+        top: 150px;
+    }
+}
+@media(max-height: 260px){
+    .header{
+        font-size: 0;
+    }
+    .grid{
+        margin-top: -50px;
+    }
+    .comp-play-container{
+        top: 150px;
+    }
+}
+@media(max-height: 223px){
+    .comp-play-container{
+        top:140px
     }
 }
