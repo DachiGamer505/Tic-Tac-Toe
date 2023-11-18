@@ -177,7 +177,7 @@ body{
 .comp-play-button{
     z-index: 3;
     margin-top: 20px;
-    font-size: 40px;
+    font-size: 25px;
     font-family: 'Patrick Hand';
     cursor: pointer;
 
@@ -190,22 +190,22 @@ body{
     flex-direction: column;
     margin: 0;
     position: absolute;
-    top: 620px;
+    top: 590px;
 }
 .choose{
-    font-size: 40px;
+    font-size: 25px;
     margin-right: 10px;
     margin-left: 10px;
 }
 .comp-play-cancel{
     display: block;
     margin: 0;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 5px;
 }
 @media(min-height: 751px){
     .comp-play-container{
-        top: 630px;
+        top: 610px;
     }
 }
 @media (max-height: 750px){
