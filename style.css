@@ -203,6 +203,11 @@ body{
     font-size: 25px;
     margin-top: 5px;
 }
+@media(min-height: 751px){
+    .comp-play-container{
+        top: 630px;
+    }
+}
 @media (max-height: 750px){
     .grid{
         grid-template-columns: 100px 100px 100px;
