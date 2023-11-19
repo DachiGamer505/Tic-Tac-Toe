@@ -203,7 +203,12 @@ body{
     font-size: 20px;
     margin-top: 5px;
 }
-@media(min-height: 751px){
+@media (min-height: 765px){
+    .comp-play-container{
+        top: 650px;
+    }
+}
+@media(min-height: 751px) and (max-height: 764px){
     .comp-play-container{
         top: 610px;
     }
